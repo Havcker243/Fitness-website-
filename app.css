@@ -1,0 +1,221 @@
+/* body elements are flex centered */
+body {
+    display: flex;
+    /* webpage is vertically situated */
+    flex-direction: column;
+    justify-content: center;
+    font-family: "courier", 'Courier New', Courier, monospace;      /*We should find a better font*/
+    background-color: #faf9f6;
+    color: #2e1c04;
+}
+
+/* p elements are flex centered */
+p {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    /* double spaced */
+    line-height: 2;
+    /* font size 20pt */
+    size: 20pt;
+}
+
+/* h1 elements are centered and flex positioned */
+h1 {
+    justify-content: center;
+    display: flex;
+    /* moves header down so menu doesnt cover it */
+    margin-top: 10%;
+    font: "courier", 'Courier New', Courier, monospace;
+}
+
+/* h2 elements are flex centered and courier new */
+h2 {
+    justify-content: center;
+    display: flex;
+    font: "courier", 'Courier New', Courier, monospace;
+}
+
+/* h3 elements are flex and courier new font */
+h3 {
+    display: flex;
+    justify-content: center;
+    font: "courier", 'Courier New', Courier, monospace;
+}
+
+/* example img is flex and centered spanning the whole webpage */
+.exampleimg {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+/* food images height is 50 px */
+.foodimg {
+    height: 50px;
+}
+
+/* table is flex and centered */
+table {
+    display: flex;
+    justify-content: center;
+}
+
+/* table elements are flex, vertical, and centered */
+table p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+/* table header display is flex */
+table h3 {
+    display: flex;
+    justify-content: center;
+}
+
+/* makes nav bar that stays at the top of the page */
+nav {
+    position: fixed;
+    top: 0;
+    /* spans top of webpage */
+    width: 100%;
+    justify-content: space-around;
+    display: flex;
+    background-color: #dcb48c;
+}
+
+
+nav ul {
+    /* gets rid of bullets */
+    list-style: none;
+    flex-basis: 50%;
+    z-index: 99;
+}
+
+nav ul ul {
+    /* hides sublist menu items */
+    display: none;
+}
+
+/* list elements position is relative and are centers in one row */
+nav ul li {
+    float: left;
+    position: relative;
+    background: none;
+}
+
+nav ul li:hover>ul {
+    /* displays block when mouse hovers */
+    display: block;
+}
+
+nav ul li p{
+    padding: 0px;
+}
+
+/* list links */
+nav ul li a {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+    color: #343027;
+    text-decoration: none;
+}
+
+/* changes list links color when hovering */
+nav ul li:hover a {
+    color: #e5d6c8;
+}
+
+/* sublist elements position is relative */
+nav ul ul li {
+    float: none;
+    position: relative;
+}
+
+/* changes background color of sublist link when hovering */
+nav ul ul li:hover a {
+    background-color: #dea267;
+
+}
+
+/* sublist background and position */
+nav ul ul {
+    background: #dcb48c;
+    border-radius: 0px;
+    position: absolute;
+}
+
+
+form > p> div  {
+    display:flex;
+    flex-direction: column;
+    flex-wrap: center;
+    font: 13px courier;               
+    background-color: #eee;
+    padding: 10px;
+     border-radius: 10px;
+      box-sizing: border-box;
+
+       
+       
+}
+h4{
+    text-align: center;
+}
+
+form > p > div
+{
+ display:flex ;
+ text-align: center;
+}
+
+label >p> div {
+    box-sizing: border-box;
+    width: 250px;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: right;
+}
+
+input[type=text],
+input[type=email],
+input[type=number],
+input[type=submit]
+select {
+    display:flex;
+    box-sizing: border-box;
+    width: 250px;
+    padding: 10px;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    text-align: center;
+     margin-left: 30px;
+       border-radius: 10px;
+}
+input[type=submit] {
+    display:flex;
+    flex-wrap: center;
+    width: 200px;
+    background-color: #dcb48c;
+    color: #fff;
+    padding: 15px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+}
+
+input[type=submit]:hover {
+    background-color: #dea267;
+    display:flex;
+}
+
+
+/* #faf9f6   #2e1c04   #dcb48c   #343027   #e5d6c8   #dea267   #aaa*/
+/* keep      brown     keep      brown     remove    keep      gray*/
+
+/* #fff is white, and #000 is black fyi*/

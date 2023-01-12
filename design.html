@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+<header>
+    <title>Nutrition Builder App</title>
+    <link rel="stylesheet" href="css/app.css" />
+</header>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="#home">home</a></li>
+            <li><a href="#form">form goals</a></li>
+            <li><a href="#mealbuilder">meal builder</a></li>
+            <li><a href="#examples">examples</a></li>
+            <li>
+                <p>more</p>
+                <ul>
+                    <li><a href="#exercise">exercises</a></li>
+                    <li><a href="#studies">studies</a></li>
+                    <li><a href="#addfood">add foods</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <a id="home">
+        <div>
+    </a>
+    <h1>Welcome To Our Nutrition Builder App!</h1><br>
+    </div>
+    <div style="padding: 5px;
+        border: 5px solid black;
+        margin: 5px;"> <!--Make this a class-->
+        <h2>Introduction</h2>
+        <p>
+            <b>We have built this website with health in mind. We want to help people
+                plan out their meals according to their goals and help them access
+                different resources according to their needs. Our main feature is our
+                meal planner application, but we include more resources including exercise
+                training and tips as well as access to different studies related to health. </b>
+        </p>
+    </div>
+    <a id="mealbuilder">
+        <div>
+    </a>
+    <h2>Begin by entering your desired amount of calories.</h2>
+    <form>
+        <p>
+            <label for="calories">Daily Calories (must be between 1200-3000):</label>
+            <input type="number" id="calories" name="calories" min="1200" max="3000">
+        </p>
+        <p>
+            <input type="submit">
+        </p>
+        <div>
+            <form>
+                <section>
+                    <h2>Please fill out the form so as to develop a personalized food plan </h2>
+                    <section id="form"></a>
+                        <div>
+                            <form method="post" action="https://example.org/">
+                                <div>
+                                    <p>
+                                        <label for="Input Weight">Input Weight:</label>
+                                        <input type="number" id="Input Weight" name="Input Weight">
+                                    </p>
+                                    <p>
+                                        <label for="Body Fat %">Body Fat %:</label>
+                                        <input type="number" id="Body Fat %" name="Body Fat Percentage">
+                                    </p>
+                                    <p>
+                                        <label for="Desired Weight">Desired Weight:</label>
+                                        <input type="number" id="Desired Weight" name="Desired Weight">
+                                    </p>
+                                    <p>
+                                        <label for="Target Time ">Target Time:</label>
+                                        <input type="number" id="Target Time" name="Target Time">
+                                    </p>
+                                    <br>
+                                </div>
+
+                                <form>
+                                    <p><strong>What is your overall fitness goal? </strong></p>
+                                    <div>
+                                        <p>
+                                            <input type="checkbox" id="Lose-weight" name="loseWeight"
+                                                value="Lose-weight">
+                                            <label for="Lose-weight ">Lose Weight</label><br>
+                                        </p>
+                                        <p>
+                                            <input type="checkbox" id="Gain-weight" name="gainWeight"
+                                                value="Gain-weight">
+
+                                            <label for="Gain-weight ">Gain Weight</label><br>
+                                        </p>
+                                        <p>
+
+                                            <input type="checkbox" id="Maintain-weight" name="maintainWeight"
+                                                value="Maintain-weight">
+                                            <label for="Maintain-weight ">Maintain Weight</label><br>
+                                        </p>
+
+
+                                        <p>
+                                            <input type="submit" name="submit" id="submit">
+                                        </p>
+
+                                    </div>
+                                </form>
+                            </form>
+                        </div>
+                    </section>
+                </section>
+            </form>
+            <div>
+                <!--<h1>Nutrition Builder</h1>-->
+                <h2>Choose the foods you ate today:</h2>
+                <form>
+                    <p>
+                        <input type="checkbox" id="pancakes" name="food" value="pancakes">
+                        <label for="pancakes">Pancakes(231 cal)</label><br>
+                    </p>
+                    <p>
+                        <input type="checkbox" id="yogurt" name="food" value="yogurt">
+                        <label for="yogurt">Yogurt(102 cal)</label><br>
+                    </p>
+                    <p>
+                        <input type="checkbox" id="avocado" name="food" value="avocado">
+                        <label for="avocado">Avocado(90 cal)</label><br>
+                    </p>
+                    <p>
+                        <input type="checkbox" id="pizza" name="food" value="pizza">
+                        <label for="pizza">Pizza(385 cal)</label><br>
+                    </p>
+                    <p>
+                        <input type="checkbox" id="chicken" name="food" value="chicken">
+                        <label for="chicken">Chicken(335 cal)</label><br>
+                    </p>
+                    <p>
+                        <input type="checkbox" id="milk" name="food" value="milk">
+                        <label for="milk">Milk(103 cal)</label><br>
+                    </p>
+                    <p>
+                        <input type="checkbox" id="apple" name="food" value="apple">
+                        <label for="apple">Apple(95 cal)</label><br>
+                    </p>
+                    <p>
+                        <input type="checkbox" id="banana" name="food" value="banana">
+                        <label for="banana">Banana(105 cal)</label><br>
+                    </p>
+                    <p>
+                        <input type="checkbox" id="burger" name="food" value="burger">
+                        <label for="burger">Burger(354 cal)</label><br>
+                    </p>
+                    <p>
+                        <input type="submit" value="Submit">
+                    </p>
+                </form>
+                <div>
+                    <p>
+                    <h2>Total Calories: #######</h2>
+                    <h4><img src="img/GoodJobAnimation.png" alt="Good Job Animation Still"></h4>
+                    </p>
+                </div>
+            </div>
+            <a id="examples">
+                <div>
+            </a>
+            <h2>Example Meal Plan</h2>
+            <table>
+                <tr>
+                    <td>
+                        <h3><b>Breakfast</b></h3>
+                    </td>
+                    <td>
+                        <p><img class="foodimg" src="img/amit-lahav-rxN2MRdFJVg-unsplash.jpg" alt="apple"> <br>Apple -
+                            95 cals</p>
+                    </td>
+                    <td>
+                        <p><img class="foodimg" src="img/pancakes_nikldn-qp7WA8AV2x0-unsplash.jpg"
+                                alt="pancakes"><br>Pancakes - 250 cals</p>
+                    </td>
+                    <td>
+                        <p><img class="foodimg" src="img/photo-1641196936589-7df4db18de66.avif" alt="yogurt"><br>Yogurt
+                            - 100 cals</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h3><b>Lunch</b></h3>
+                    </td>
+                    <td>
+                        <p><img class="foodimg" src="img/milk_kim-gorga-p3ViLmVgVJ4-unsplash.jpg" alt="milk"><br>Milk -
+                            103 cals</p>
+                    </td>
+                    <td>
+                        <p><img class="foodimg" src="img/mockup-graphics-Kl3467edwsE-unsplash.jpg"
+                                alt="banana"><br>Banana - 105 cals</p>
+                    </td>
+                    <td>
+                        <p><img class="foodimg" src="img/engin-akyurt-i1CCaOnyWiI-unsplash.jpg" alt="quiche"> <br>Quiche
+                            - 450 cals</nr>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h3><b>Dinner</b></h3>
+                    </td>
+                    <td>
+                        <p><img class="foodimg" src="img/thought-catalog-9aOswReDKPo-unsplash.jpg"
+                                alt="avocado"><br>Avocado - 160 cals</p>
+                    </td>
+                    <td>
+                        <p><img class="foodimg" src="img/chicken_alison-marras-GyV6SL_fKsI-unsplash.jpg" alt="chicken">
+                            <br>Chicken - 335 cals
+                        </p>
+                    </td>
+                    <td>
+                        <p><img class="foodimg" src="img/food-photographer-E94j3rMcxlw-unsplash.jpg" alt="hamburger">
+                            <br>Hamburger - 354 cals
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <a id="more">
+            <div>
+        </a>
+        <h2>More</h2>
+        <section><a id="exercise"></a>
+            <h3>Exercise</h3>
+            <img class="exampleimg" src="img/john-arano-h4i9G-de7Po-unsplash.jpg" alt="woman exercising">
+            <p><a href="https://www.youtube.com/watch?v=nzwU9RR6l2w" alt="Arm workout">Arm Workout</a></p>
+            <p><a href="https://www.youtube.com/watch?v=LWdhO_OMrHk" alt="Leg workout">Leg Workout</a></p>
+            <p><a href="https://www.youtube.com/watch?v=Cnmy08JgakM" alt="Ab workout">Ab Workout</a></p>
+        </section>
+        <section><a id="studies"></a>
+            <h3>Studies</h3>
+            <p><a href="https://go.gale.com/ps/i.do?id=GALE%7CA9044182&sid=googleScholar&v=2.1&it=r&linkaccess=abs&issn=10996079&p=HRCA&sw=w&userGroupName=mtvernon"
+                    alt="food before workout study">
+                    What Food to Eat Before a Workout
+                </a></p>
+            <p><a href="https://paulogentil.com/pdf/Effect%20Of%20Short-Term%20Equal-Volume%20Resistance%20Training%20With%20Different%20Workout%20Frequency%20On%20Muscle%20Mass%20And%20Strength%20In%20Untrained%20Men%20And%20Women.pdf"
+                    alt="workout frequency study">
+                    What Workout Frequency Does to Untrained Men and Women
+                </a></p>
+            <p><a href="https://link.springer.com/article/10.2165/00007256-199009060-00001"
+                    alt="Workouts and mental health">
+                    What Working Out Does to Mental Health
+                </a></p>
+        </section>
+        <section><a id="addfood"></a>
+            <h3>Add Foods</h3>
+            <p>
+            <form action="http://example.org">
+                <div>
+                    <p>
+                        <label for="otherFood">Other:</label>
+                        <input type="text" name="otherFood" id="otherFood"><br>
+                    </p>
+                    <p>
+                        <label for="otherCals">Calories:</label>
+                        <input type="number" name="otherCals" id="otherCals">
+                    </p>
+                    <p>
+                        <input type="submit" name="submit" id="submit">
+                    </p>
+                </div>
+            </form>
+            </p>
+        </section>
+        </div>
+        <div>
+            <address>
+                <section>
+                    <section id="Contact Us"></a>
+                        <div>
+                            <h3> If you have any questions of inquiries please do not hesitate to
+                                contact us </h3>
+                            <p>
+                                <label for="our Number">Our Number:</label>+1 (509)2894758
+                                <label for="our email">Our Email:</label>foodlover@gym.com
+                            </p>
+                            <h3>Please sign up for our mailing list and subscribe to our once-a-month healthy living
+                                newsletter.</h3>
+                            <p>
+                                <label for="Your email">Your email:</label>
+                                <input type="email" id="Your email" name="Your email" placeholder="email@gmail.com">
+                            </p>
+                        </div>
+                    </section>
+                </section>
+            </address>
+        </div>
+    </form>
+</body>
+
+</html>
